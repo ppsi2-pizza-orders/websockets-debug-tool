@@ -1,4 +1,4 @@
 'use strict'
 module.exports = {
-    PUSHER_KEY: 'key1',
+    PUSHER_KEY: 'cPLbjveoWXRthHNQ',
 }
