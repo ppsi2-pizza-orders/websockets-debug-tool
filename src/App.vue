@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-container>
+        <b-row class="title">
+            <b-col><h4>Pizza-orders websockets debug tool</h4></b-col>
+        </b-row>
+        <b-row>
+            <b-col><Token></Token></b-col>
+        </b-row>
+      <b-row>
+        <b-col><Cook></Cook></b-col>
+        <b-col><Client></Client></b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Cook from './components/Cook.vue'
+import Client from './components/Client.vue'
+import Token from './components/Token.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Cook, Client, Token
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    .title {
+        margin: 20px;
+    }
 </style>
